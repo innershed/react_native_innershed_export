@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "height": 20,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      Array [
+        undefined,
+        Object {
+          "bottom": 0,
+          "position": "absolute",
+          "top": 20,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text>
+      Foobar
+    </Text>
+  </View>
+</View>
+`;
