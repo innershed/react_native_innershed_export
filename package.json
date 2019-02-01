@@ -1,6 +1,6 @@
 {
-  "name": "components",
-  "version": "1.0.0",
+  "name": "innershed-components",
+  "version": "1.0.1",
   "description": "Collection of common and useful React Native components",
   "main": "index.js",
   "scripts": {
