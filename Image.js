@@ -8,6 +8,7 @@ export default class CImage extends React.Component {
         source: PropTypes.any.isRequired,
         width: PropTypes.any,
         height: PropTypes.any,
+        ratio: PropTypes.number,
         style: PropTypes.any
     };
 
@@ -62,14 +63,14 @@ export default class CImage extends React.Component {
         if (width) {
             if (typeof width === 'string' && width.substr(-1) === '%' && this.state.dimensions !== undefined)
                 width = (width.slice(0, -1) / 100) * this.state.dimensions.width;
-            const ratio = this.state.height / this.state.width;
+            const ratio = this.props.ratio ? this.props.ratio : this.state.height / this.state.width;
             height = ratio * width;
         }
         // we have the height provided, calc width
         else if (height) {
             if (typeof height === 'string' && height.substr(-1) === '%' && this.state.dimensions !== undefined)
                 height = (height.slice(0, -1) / 100) * this.state.dimensions.height;
-            const ratio = this.state.width / this.state.height;
+            const ratio = this.props.ratio ? this.props.ratio : this.state.width / this.state.height;
             width = ratio * height;
         }
         else {
