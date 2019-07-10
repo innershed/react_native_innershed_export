@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import PropTypes from 'prop-types';
-import {Constants} from 'expo';
+import Constants from 'expo-constants';
 
 class SafeView extends React.Component {
     static propTypes = {
