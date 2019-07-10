@@ -1,6 +1,6 @@
 {
   "name": "innershed-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Collection of common and useful React Native components",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "lint": "eslint --ignore-path .gitignore ."
   },
   "peerDependencies": {
-    "expo": ">31"
+    "expo": ">33"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -16,10 +16,10 @@
     "eslint": "^5.10.0",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-react-native": "^3.5.0",
-    "expo": "^31.0.2",
-    "jest-expo": "^31.0.0",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
+    "expo": "^33.0.0",
+    "jest-expo": "^33.0.0",
+    "react": "16.8.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz"
   },
   "jest": {
     "preset": "jest-expo",
