@@ -12,3 +12,11 @@ it('renders', () => {
         </Touchable>
     )).toMatchSnapshot();
 });
+
+it('renders', () => {
+    expect(renderer.create(
+        <Touchable onPress={()=>{}} disabled={true}>
+            <View></View>
+        </Touchable>
+    )).toMatchSnapshot();
+});
