@@ -23,21 +23,20 @@ class Touchable extends React.Component {
     }
 
     render() {
+        const {children, onPress, borderless, ...props} = this.props;
         if (Platform.OS === 'android') {
-            const {borderless} = this.props;
-
             return (
                 <View>
-                    <TouchableNativeFeedback onPress={this.props.onPress} background={TouchableNativeFeedback.Ripple('#EEE', borderless)}>
-                        {this.props.children}
+                    <TouchableNativeFeedback onPress={onPress} background={TouchableNativeFeedback.Ripple('#EEE', borderless)} {...props}>
+                        {children}
                     </TouchableNativeFeedback>
                 </View>
             );
         }
         else {
             return (
-                <TouchableHighlight onPress={this.props.onPress} underlayColor={'transparent'} activeOpacity={0.2}>
-                    {this.props.children}
+                <TouchableHighlight onPress={onPress} underlayColor={'transparent'} activeOpacity={0.2} {...props}>
+                    {children}
                 </TouchableHighlight>
             );
         }
